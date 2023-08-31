@@ -61,9 +61,7 @@ p {
     width: 70%;
 }
 
-/* Media queries for responsive design */
 
-/* For screens with a maximum width of 600px (e.g., phones) */
 @media screen and (max-width: 600px) {
 
     body {
@@ -72,14 +70,11 @@ p {
 
     .btn {
         padding: 1rem 40px;
-        /* Adjust padding for smaller screens */
         margin: 2rem 0rem;
         font-size: 1.2rem;
-        /* Adjust font size for smaller screens */
     }
 }
 
-/* For screens with a minimum width of 601px and maximum of 1024px (e.g., tablets) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     body {
         margin: 2rem;
@@ -87,16 +82,13 @@ p {
 
     .container {
         justify-content: space-between;
-        /* Increase spacing between color containers */
     }
 
     .color-container {
         width: 48%;
-        /* Adjust container width for better fit on tablets */
     }
 }
 
-/* For screens with a minimum width of 1025px (e.g., desktops) */
 @media screen and (min-width: 1025px) {
     body {
         margin: 2rem;
@@ -104,11 +96,9 @@ p {
 
     .container {
         justify-content: space-between;
-        /* Increase spacing between color containers */
     }
 
     .color-container {
         width: 30%;
-        /* Adjust container width for better fit on larger screens */
     }
 }
