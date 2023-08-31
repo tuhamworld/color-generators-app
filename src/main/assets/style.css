@@ -1,0 +1,114 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-container {
+    background-color: orange;
+    width: 300px;
+    height: 150px;
+    color: #fff;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.3rem 70px;
+    margin: 3rem 0rem;
+    cursor: pointer;
+    background-color: #C63450;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: cursive;
+    font-size: 1.4rem;
+    box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.btn:hover {
+    opacity: .9;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1,
+p {
+    margin: 1rem auto;
+    text-align: center;
+    width: 70%;
+}
+
+/* Media queries for responsive design */
+
+/* For screens with a maximum width of 600px (e.g., phones) */
+@media screen and (max-width: 600px) {
+
+    body {
+        margin: 2rem;
+    }
+
+    .btn {
+        padding: 1rem 40px;
+        /* Adjust padding for smaller screens */
+        margin: 2rem 0rem;
+        font-size: 1.2rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+/* For screens with a minimum width of 601px and maximum of 1024px (e.g., tablets) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        margin: 2rem;
+    }
+
+    .container {
+        justify-content: space-between;
+        /* Increase spacing between color containers */
+    }
+
+    .color-container {
+        width: 48%;
+        /* Adjust container width for better fit on tablets */
+    }
+}
+
+/* For screens with a minimum width of 1025px (e.g., desktops) */
+@media screen and (min-width: 1025px) {
+    body {
+        margin: 2rem;
+    }
+
+    .container {
+        justify-content: space-between;
+        /* Increase spacing between color containers */
+    }
+
+    .color-container {
+        width: 30%;
+        /* Adjust container width for better fit on larger screens */
+    }
+}
